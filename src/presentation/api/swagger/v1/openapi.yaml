@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: User Feedback API
+  version: 1.0.0
+  description: API for managing user feedback
+
+servers:
+  - url: http://localhost:3000/api/v1
+    description: Development server
+  - url: https://staging-api.example.com/v1
+    description: Staging server
+  - url: https://api.example.com/v1
+    description: Production server
+
+tags:
+  - name: Users
+    description: User operations
+
+paths:
+  $ref: './paths/users.yaml'
+
+components:
+  $ref: './components/schemas.yaml'

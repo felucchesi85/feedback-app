@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "@application/*": ["./src/application/*"],
+            "@domain/*": ["domain/*"],
+            "@infrastructure/*": ["infrastructure/*"],
+            "@presentation/*": ["presentation/*"],
+            "@shared/*": ["shared/*"],
+            "@/*": ["*"]
+        },
+        "target": "es5",
+        "module": "commonjs",
+        "allowJs": true,
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.js",
+        "src/**/*.jsx"
+    ],
+    "exclude": ["dist"]
+}

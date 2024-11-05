@@ -1,0 +1,10 @@
+# Ejemplo de contrato para un endpoint
+paths:
+  /users:
+    post:
+      summary: Creates a user
+      parameters:
+        - name: email
+          required: true
+          schema:
+            type: string 
