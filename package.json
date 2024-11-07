@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/main/server.ts",
-    "build": "tsc",
+"build": "tsc && if not exist dist\\presentation\\api\\swagger (mkdir dist\\presentation\\api\\swagger) && copy src\\presentation\\api\\swagger\\swagger.json dist\\presentation\\api\\swagger\\",
     "start": "node dist/main/server.js",
     "dev:mock": "cross-env NODE_ENV=development ENABLE_MOCKS=true ts-node-dev --respawn --transpile-only src/main/server.ts",
     "vercel-build": "tsc"
