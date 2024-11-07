@@ -3,6 +3,6 @@ dist/
 .env
 *.log
 .DS_Store
-coverage/
+coverage/ 
 .env.local
 .vercel
